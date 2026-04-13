@@ -1,0 +1,2 @@
+import "./DetalhesTenis.css";
+

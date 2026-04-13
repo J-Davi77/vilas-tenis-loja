@@ -1,0 +1,93 @@
+import "./Footer.css";
+import insta from '../../assets/imgs/icons/instagram.svg';
+import zap from '../../assets/imgs/icons/whatsapp.svg';
+import local from '../../assets/imgs/icons/local.svg';
+
+export function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-brand">
+                    <h2 className="footer-logo">VILA'S TÊNIS</h2>
+                    <p className="footer-desc">Seu estilo começa nos pés.</p>
+                </div>
+
+                <nav className="footer-links">
+                    <h3 className="footer-title">Links rápidos</h3>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Início</a>
+                        </li>
+                        <li>
+                            <a href="#catalogo">Catálogo Inicial</a>
+                        </li>
+                        <li>
+                            <a href="../casuais/index.html">Casual</a>
+                        </li>
+                        <li>
+                            <a href="#">Esportivo</a>
+                        </li>
+                        <li>
+                            <a href="../chuteiras/index.html">Chuteiras</a>
+                        </li>
+                        <li>
+                            <a href="../ajuda/index.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div className="footer-contact">
+                    <h3 className="footer-title">Contato</h3>
+                    <p>
+                        <img
+                            src={local}
+                            alt="localização"
+                            width="24"
+                        />
+                        R. Maria Martins Batista, 1059 - Vila Sonia
+                    </p>
+                    <p>
+                        <img
+                            src={zap}
+                            alt="Whatsapp"
+                            width="24"
+                        />
+                        (13) 97828-3454
+                    </p>
+                    <p>
+                        <img
+                            src={insta}
+                            alt="Instagram"
+                            width="24"
+                        />
+                        <a
+                            href="https://www.instagram.com/vilastenis"
+                            target="_blank"
+                            className="insta-loja"
+                        >
+                            @vilastenis
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div className="footer-bottom">
+                <p>
+                    Site desenvolvido com ❤️ por 
+                    <a
+                        href="https://www.instagram.com/julio_davii_/"
+                        className="meu-insta"
+                        target="_blank"
+                    >
+                        <img
+                            src={insta}
+                            alt="Instagram"
+                            width="20"
+                        />
+                        @julio_davii_
+                    </a>
+                </p>
+            </div>
+        </footer>
+    );
+}

@@ -1,0 +1,90 @@
+#hero {
+    min-height: calc(100vh - 80px);
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("../../assets/hero.png");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+#hero-content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-title {
+    font-size: clamp(2.1rem, 5vw, 4rem);
+    text-wrap: balance;
+    color: var(--green);
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(7rem);
+    animation: fadeIn 0.7s 0.3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hero-para {
+    color: var(--text-muted);
+    font-size: clamp(12px, 3vw, 18px);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeIn 0.7s 0.6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#hero-btn {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    width: clamp(150px, 30vw, 280px);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    letter-spacing: 0.8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    align-self: center;
+    background-color: var(--green);
+    transition: 0.2s;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeIn 0.7s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#hero-btn:active {
+    scale: 0.93;
+}
+
+#hero-btn:hover {
+    background-color: var(--green-darker);
+}
+
+@media (max-width: 768px) {
+    #hero {
+        min-height: 90vh;
+        padding: 0 6%;
+        justify-content: flex-end;
+        background-position: center;
+    }
+
+    #hero-content {
+        text-align: center;
+        max-width: 100%;
+        padding-bottom: 4rem;
+    }
+}
