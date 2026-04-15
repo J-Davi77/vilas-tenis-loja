@@ -2,6 +2,7 @@ import "./Footer.css";
 import insta from '../../assets/imgs/icons/instagram.svg';
 import zap from '../../assets/imgs/icons/whatsapp.svg';
 import local from '../../assets/imgs/icons/local.svg';
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
     return (
@@ -16,22 +17,23 @@ export function Footer() {
                     <h3 className="footer-title">Links rápidos</h3>
                     <ul>
                         <li>
-                            <a href="../index.html">Início</a>
+                            <NavLink to="/">Início</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
+                            <NavLink to="/"></NavLink>
                             <a href="#catalogo">Catálogo Inicial</a>
+                        </li> */}
+                        <li>
+                            <NavLink to= "/casuais">Casual</NavLink>
                         </li>
                         <li>
-                            <a href="../casuais/index.html">Casual</a>
+                            <NavLink to="/esportivos">Esportivo</NavLink>
                         </li>
                         <li>
-                            <a href="#">Esportivo</a>
+                            <NavLink to="/chuteiras">Chuteira</NavLink>
                         </li>
                         <li>
-                            <a href="../chuteiras/index.html">Chuteiras</a>
-                        </li>
-                        <li>
-                            <a href="../ajuda/index.html">Ajuda</a>
+                            <NavLink to="/ajuda">Ajuda</NavLink>
                         </li>
                     </ul>
                 </nav>

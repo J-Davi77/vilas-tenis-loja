@@ -1,2 +1,1 @@
 import "./DetalhesTenis.css";
-

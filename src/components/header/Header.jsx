@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-
+import { Branding } from "../branding/Branding";
 import casual from "../../assets/imgs/icons/casual.svg";
 import sport from "../../assets/imgs/icons/sports.svg";
 import chuteira from "../../assets/imgs/icons/chuteira.svg";
@@ -10,8 +10,9 @@ import menu from "../../assets/imgs/icons/menu.svg";
 export function Header() {
     return (
         <header>
+            
             <NavLink to="/" id="inicio">
-                <h1 id="nome-loja">VILA'S TÊNIS</h1>
+                <h1 id="nome-loja">VILA'S <span id="tenis-titulo">TÊNIS</span></h1>
             </NavLink>
 
             <nav id="site-nav">

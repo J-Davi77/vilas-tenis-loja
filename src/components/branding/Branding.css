@@ -1,0 +1,16 @@
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.branding span{
+    color: var(--green-darker);
+}
+.branding link{
+    color: var(--green);
+    font-weight: bold;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+.branding img{
+    width: 24px;
+}
