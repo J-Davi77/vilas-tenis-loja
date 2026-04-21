@@ -1,0 +1,122 @@
+.tenis-card {
+    background-color: var(--bg-black-2);
+    height: 580px;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    transition: 0.15s ease-in-out;
+}
+
+.tenis-card:hover {
+    scale: 1.025;
+}
+
+.tenis-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.tenis-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    object-fit: cover;
+    color: white;
+}
+
+.categorias {
+    display: flex;
+    gap: 0.5rem 0.5rem;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    font-size: 0.7rem;
+    color: var(--green);
+    background-color: var(--bg-categoria);
+    border: 1px solid var(--green);
+    min-width: 85px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0.15rem 0.4rem;
+}
+
+.content {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nome {
+    color: var(--text-primary);
+    font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+.colorway {
+    color: var(--text-muted);
+    font-weight: 300;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.nome-container {
+    margin: 1rem 0 1rem 0;
+}
+
+.preco-partida {
+    color: var(--text-muted);
+    font-size: clamp(0.7rem, 3vw, 0.9rem);
+}
+
+.preco {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: clamp(1.05rem, 4.3vw, 1.45rem);
+    font-family: Poppins, sans-serif;
+}
+
+.tenis-card .detalhes-btn.primary {
+    width: 100%;
+    margin-top: auto;
+}
+
+.primary,
+.secondary {
+    background: none;
+    border: 1px solid var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 4vw, 1.15rem);
+    letter-spacing: 0.75px;
+    transition: 0.2s;
+}
+
+.primary {
+    background: var(--green);
+}
+
+.primary:hover {
+    background: var(--green-darker);
+}
+
+@media (max-width: 768px) {
+    .detalhes-btn.primary {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .tenis-card {
+        padding: 1rem;
+    }
+
+    .categoria {
+        font-size: 0.6rem;
+        min-width: 70px;
+    }
+}

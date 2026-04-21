@@ -49,24 +49,3 @@ body {
 body:has(#detalhes-overlay.show) {
     overflow: hidden;
 }
-
-
-@media (max-width: 1040px) {
-    #detalhes {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 2rem;
-    }
-
-    #first-column {
-        padding: 3rem 0 0 0;
-    }
-
-    #second-column {
-        padding: 0 1.5rem 0 1.5rem;
-    }
-
-    #zap-btn {
-        width: 100%;
-    }
-}

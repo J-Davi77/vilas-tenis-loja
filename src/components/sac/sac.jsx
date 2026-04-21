@@ -6,7 +6,7 @@ export function Sac(){
         <div className="sac-container">
             <h2>Dúvidas frequentes</h2>
             
-            <div className="item" onClick={() => setAberto (aberto=== 1 ? null : 1)}>
+            <div className="item" onClick={() => setAberto (aberto === 1 ? null : 1)}>
                 <h3>
                     Como faço para comprar um tênis?
                     <svg
